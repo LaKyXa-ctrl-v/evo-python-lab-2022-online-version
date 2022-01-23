@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}
+Сторінка для вітання! =)
+{% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>Напиши сюди своє ім'я!</h1>
+    <form action="{% url 'login' %}" method="post">
+        {% csrf_token %}
+        {{ form.name }}
+
+        <input type="text" placeholder="Ім'я" name="first_name">
+
+        <input type="text" placeholder="Призвіще" name="last_name">
+
+        <button class="btn btn-success" type="submit">Привітатись!</button><br>
+        <span>{{ error }}</span>
+    </form>
+</div>
+{% endblock %}

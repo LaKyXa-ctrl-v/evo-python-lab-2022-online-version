@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}
+Домашня сторінка!
+{% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>Ті хто вже привітались!</h1>
+
+    {% for el in person_list %}
+    <div class="bl-scroll">
+        <div class="alert alert-warning">
+            <h3>{{ el.first_name }} {{ el.last_name }}</h3>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
