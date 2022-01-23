@@ -1,0 +1,10 @@
+[
+    {
+        "model": "login.person",
+        "pk": 1,
+        "fields": {
+            "first_name": "Danylo",
+            "last_name": "Mershchanskyi"
+        }
+    }
+]

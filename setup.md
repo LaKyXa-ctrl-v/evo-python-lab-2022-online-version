@@ -24,7 +24,16 @@ $ python manage.py loaddata db.json
 ```
 $ python manage.py runserver
 ```
-## 5) Read README.md 
+
+## 5) If you need start server in docker container:
+
+```
+$ docker-compose up -d
+```
+
+## 6) Open site on [local](http://localhost:8000/)
+
+## 7) Read README.md 
 _____
 # Admin (if you need)
 
