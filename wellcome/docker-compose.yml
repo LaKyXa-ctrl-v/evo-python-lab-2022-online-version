@@ -1,13 +1,10 @@
-version: '3.7'
+version: '3.4'
 
 services:
-  user_reg_web:
-    container_name: wellcome
+  evopythonlab2022onlineversionex2:
+    image: evopythonlab2022onlineversionex2
     build:
-      context: ./
-      dockerfile: Dockerfile
-    command: bash -c "python /usr/django/wellcome/manage.py migrate --noinput && python /usr/django/wellcome/manage.py runserver 0.0.0.0:8000"
-    volumes:
-      - .:/usr/django/wellcome
+      context: .
+      dockerfile: ./Dockerfile
     ports:
       - 8000:8000
